@@ -4,6 +4,9 @@ use std::fs;
 extern crate serde;
 extern crate serde_json;
 
+mod layout;
+use layout::MAPPINGS;
+
 #[derive(Serialize, Debug)]
 struct Rule {
     description: String,
@@ -14,20 +17,22 @@ struct Rule {
 struct Manipulator {
     from: From,
     to: To,
-    #[serde(rename = "type")]
+    #[serde(default)]
     type_: String,
 }
 
 #[derive(Serialize, Debug)]
 struct From {
     key_code: String,
-    modifiers: Modifiers,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    modifiers: Option<Modifiers>,
 }
 
 #[derive(Serialize, Debug)]
 struct To {
     key_code: String,
-    modifiers: Modifiers,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    modifiers: Option<Modifiers>,
 }
 
 #[derive(Serialize, Debug)]
@@ -37,26 +42,25 @@ struct Modifiers {
 }
 
 fn main() {
+    let description = "JIS配列から自作配列への変換".to_string();
+    let save_path = "./layout.json";
     let config = Rule {
-        description: "test".to_string(),
-        manipulators: vec![Manipulator {
-            from: From {
-                key_code: "a".to_string(),
-                modifiers: Modifiers {
-                    mandatory: "right_shift".to_string(),
-                    optional: "any".to_string(),
+        description: description,
+        manipulators: MAPPINGS
+            .into_iter()
+            .map(|(from_key, to_key)| Manipulator {
+                from: From {
+                    key_code: from_key.to_string(),
+                    modifiers: None,
                 },
-            },
-            to: To {
-                key_code: "b".to_string(),
-                modifiers: Modifiers {
-                    mandatory: "right_shift".to_string(),
-                    optional: "any".to_string(),
+                to: To {
+                    key_code: to_key.to_string(),
+                    modifiers: None,
                 },
-            },
-            type_: "basic".to_string(),
-        }],
+                type_: "basic".to_string(),
+            })
+            .collect(),
     };
     let json_str = serde_json::to_string_pretty(&config).unwrap();
-    fs::write("./test.json", json_str);
+    fs::write(save_path, json_str);
 }
