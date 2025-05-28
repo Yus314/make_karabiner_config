@@ -8,6 +8,11 @@ mod layout;
 use layout::MAPPINGS;
 
 #[derive(Serialize, Debug)]
+struct File {
+    rules: Vec<Rule>,
+}
+
+#[derive(Serialize, Debug)]
 struct Rule {
     description: String,
     manipulators: Vec<Manipulator>,
@@ -44,22 +49,24 @@ struct Modifiers {
 fn main() {
     let description = "JIS配列から自作配列への変換".to_string();
     let save_path = "./layout.json";
-    let config = Rule {
-        description: description,
-        manipulators: MAPPINGS
-            .into_iter()
-            .map(|(from_key, to_key)| Manipulator {
-                from: From {
-                    key_code: from_key.to_string(),
-                    modifiers: None,
-                },
-                to: To {
-                    key_code: to_key.to_string(),
-                    modifiers: None,
-                },
-                r#type: "basic".to_string(),
-            })
-            .collect(),
+    let config = File {
+        rules: vec![Rule {
+            description: description,
+            manipulators: MAPPINGS
+                .into_iter()
+                .map(|(from_key, to_key)| Manipulator {
+                    from: From {
+                        key_code: from_key.to_string(),
+                        modifiers: None,
+                    },
+                    to: To {
+                        key_code: to_key.to_string(),
+                        modifiers: None,
+                    },
+                    type_: "basic".to_string(),
+                })
+                .collect(),
+        }],
     };
     let json_str = serde_json::to_string_pretty(&config).unwrap();
     fs::write(save_path, json_str);
