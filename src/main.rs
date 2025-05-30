@@ -7,6 +7,9 @@ extern crate serde_json;
 mod layout;
 use layout::MAPPINGS;
 
+mod keycode_mapping;
+use keycode_mapping::convert_jis_to_key_code;
+
 #[derive(Serialize, Debug)]
 struct File {
     rules: Vec<Rule>,
@@ -47,12 +50,21 @@ struct Modifiers {
 }
 
 fn main() {
+    let converted: Vec<(&str, &str)> = MAPPINGS
+        .iter()
+        .map(|(lhs, rhs)| {
+            let new_lhs = convert_jis_to_key_code(lhs).unwrap_or(lhs);
+            let new_rhs = convert_jis_to_key_code(rhs).unwrap_or(rhs);
+            (new_lhs, new_rhs)
+        })
+        .collect();
+
     let description = "JIS配列から自作配列への変換".to_string();
     let save_path = "./layout.json";
     let config = File {
         rules: vec![Rule {
-            description: description,
-            manipulators: MAPPINGS
+            description,
+            manipulators: converted
                 .into_iter()
                 .map(|(from_key, to_key)| Manipulator {
                     from: From {
@@ -69,5 +81,9 @@ fn main() {
         }],
     };
     let json_str = serde_json::to_string_pretty(&config).unwrap();
-    fs::write(save_path, json_str);
+
+    match fs::write(save_path, json_str) {
+        Ok(_) => println!("Successfully wrote to {}", save_path),
+        Err(e) => eprintln!("Failed to write to {}: {}", save_path, e),
+    }
 }

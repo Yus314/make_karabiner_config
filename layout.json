@@ -176,7 +176,7 @@
         },
         {
           "from": {
-            "key_code": ";"
+            "key_code": "semicolon"
           },
           "to": {
             "key_code": "r"
@@ -185,7 +185,7 @@
         },
         {
           "from": {
-            "key_code": ":"
+            "key_code": "quote"
           },
           "to": {
             "key_code": "v"
