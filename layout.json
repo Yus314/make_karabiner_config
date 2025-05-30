@@ -229,7 +229,12 @@
             "key_code": "v"
           },
           "to": {
-            "key_code": "'"
+            "key_code": "7",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
           },
           "type": "basic"
         },
