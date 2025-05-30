@@ -45,11 +45,9 @@
           },
           "to": {
             "key_code": "hyphen",
-            "modifiers": {
-              "mandatory": [
-                "left_shift"
-              ]
-            }
+            "modifiers": [
+              "left_shift"
+            ]
           },
           "type": "basic"
         },
@@ -230,11 +228,9 @@
           },
           "to": {
             "key_code": "7",
-            "modifiers": {
-              "mandatory": [
-                "left_shift"
-              ]
-            }
+            "modifiers": [
+              "left_shift"
+            ]
           },
           "type": "basic"
         },
