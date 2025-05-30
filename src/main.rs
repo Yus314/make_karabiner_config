@@ -41,7 +41,7 @@ struct From {
 struct To {
     key_code: String,
     #[serde(skip_serializing_if = "Option::is_none")]
-    modifiers: Option<Modifiers>,
+    modifiers: Option<Vec<String>>,
 }
 
 #[derive(Serialize, Debug)]
@@ -69,13 +69,10 @@ fn main() {
                 })
             };
             let to_transformed: TransformedKey = process_key_symbol(to_input_str);
-            let to_final_modifiers_obj = if to_transformed.mandatory_modifiers.is_empty() {
+            let to_final_modifiers_vec = if to_transformed.mandatory_modifiers.is_empty() {
                 None
             } else {
-                Some(Modifiers {
-                    mandatory: to_transformed.mandatory_modifiers,
-                    optional: Vec::new(),
-                })
+                Some(to_transformed.mandatory_modifiers)
             };
             Manipulator {
                 from: From {
@@ -84,7 +81,7 @@ fn main() {
                 },
                 to: To {
                     key_code: to_transformed.key_code,
-                    modifiers: to_final_modifiers_obj,
+                    modifiers: to_final_modifiers_vec,
                 },
                 r#type: "basic".to_string(),
             }
