@@ -8,7 +8,8 @@ mod layout;
 use layout::MAPPINGS;
 
 mod keycode_mapping;
-use keycode_mapping::convert_jis_to_key_code;
+use keycode_mapping::process_key_symbol;
+use keycode_mapping::TransformedKey;
 
 #[derive(Serialize, Debug)]
 struct File {
@@ -45,39 +46,54 @@ struct To {
 
 #[derive(Serialize, Debug)]
 struct Modifiers {
-    mandatory: String,
-    optional: String,
+    #[serde(skip_serializing_if = "Vec::is_empty", default)]
+    mandatory: Vec<String>,
+    #[serde(skip_serializing_if = "Vec::is_empty", default)]
+    optional: Vec<String>,
 }
 
 fn main() {
-    let converted: Vec<(&str, &str)> = MAPPINGS
-        .iter()
-        .map(|(lhs, rhs)| {
-            let new_lhs = convert_jis_to_key_code(lhs).unwrap_or(lhs);
-            let new_rhs = convert_jis_to_key_code(rhs).unwrap_or(rhs);
-            (new_lhs, new_rhs)
-        })
-        .collect();
-
     let description = "JIS配列から自作配列への変換".to_string();
     let save_path = "./layout.json";
+
+    let manipulators: Vec<Manipulator> = MAPPINGS
+        .iter()
+        .map(|(from_input_str, to_input_str)| {
+            let from_transformed: TransformedKey = process_key_symbol(from_input_str);
+            let from_final_modifiers_obj = if from_transformed.mandatory_modifiers.is_empty() {
+                None
+            } else {
+                Some(Modifiers {
+                    mandatory: from_transformed.mandatory_modifiers,
+                    optional: Vec::new(),
+                })
+            };
+            let to_transformed: TransformedKey = process_key_symbol(to_input_str);
+            let to_final_modifiers_obj = if to_transformed.mandatory_modifiers.is_empty() {
+                None
+            } else {
+                Some(Modifiers {
+                    mandatory: to_transformed.mandatory_modifiers,
+                    optional: Vec::new(),
+                })
+            };
+            Manipulator {
+                from: From {
+                    key_code: from_transformed.key_code,
+                    modifiers: from_final_modifiers_obj,
+                },
+                to: To {
+                    key_code: to_transformed.key_code,
+                    modifiers: to_final_modifiers_obj,
+                },
+                r#type: "basic".to_string(),
+            }
+        })
+        .collect();
     let config = File {
         rules: vec![Rule {
             description,
-            manipulators: converted
-                .into_iter()
-                .map(|(from_key, to_key)| Manipulator {
-                    from: From {
-                        key_code: from_key.to_string(),
-                        modifiers: None,
-                    },
-                    to: To {
-                        key_code: to_key.to_string(),
-                        modifiers: None,
-                    },
-                    r#type: "basic".to_string(),
-                })
-                .collect(),
+            manipulators,
         }],
     };
     let json_str = serde_json::to_string_pretty(&config).unwrap();

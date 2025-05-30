@@ -44,7 +44,12 @@
             "key_code": "t"
           },
           "to": {
-            "key_code": "equal_sign"
+            "key_code": "hyphen",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
           },
           "type": "basic"
         },
