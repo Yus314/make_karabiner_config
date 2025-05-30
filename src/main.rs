@@ -63,7 +63,7 @@ fn main() {
                         key_code: to_key.to_string(),
                         modifiers: None,
                     },
-                    type_: "basic".to_string(),
+                    r#type: "basic".to_string(),
                 })
                 .collect(),
         }],
