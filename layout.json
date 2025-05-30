@@ -98,6 +98,15 @@
         },
         {
           "from": {
+            "key_code": "open_bracket"
+          },
+          "to": {
+            "key_code": "z"
+          },
+          "type": "basic"
+        },
+        {
+          "from": {
             "key_code": "a"
           },
           "to": {
