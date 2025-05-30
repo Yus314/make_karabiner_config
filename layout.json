@@ -44,7 +44,7 @@
             "key_code": "t"
           },
           "to": {
-            "key_code": "="
+            "key_code": "equal_sign"
           },
           "type_": "basic"
         },
