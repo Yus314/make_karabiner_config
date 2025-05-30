@@ -10,7 +10,7 @@
           "to": {
             "key_code": "k"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -19,7 +19,7 @@
           "to": {
             "key_code": "y"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -28,7 +28,7 @@
           "to": {
             "key_code": "o"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -37,7 +37,7 @@
           "to": {
             "key_code": "period"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -46,7 +46,7 @@
           "to": {
             "key_code": "equal_sign"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -55,7 +55,7 @@
           "to": {
             "key_code": "f"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -64,7 +64,7 @@
           "to": {
             "key_code": "c"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -73,7 +73,7 @@
           "to": {
             "key_code": "l"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -82,7 +82,7 @@
           "to": {
             "key_code": "p"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -91,7 +91,7 @@
           "to": {
             "key_code": "q"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -100,7 +100,7 @@
           "to": {
             "key_code": "h"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -109,7 +109,7 @@
           "to": {
             "key_code": "i"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -118,7 +118,7 @@
           "to": {
             "key_code": "e"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -127,7 +127,7 @@
           "to": {
             "key_code": "a"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -136,7 +136,7 @@
           "to": {
             "key_code": "u"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -145,7 +145,7 @@
           "to": {
             "key_code": "d"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -154,7 +154,7 @@
           "to": {
             "key_code": "s"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -163,7 +163,7 @@
           "to": {
             "key_code": "t"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -172,7 +172,7 @@
           "to": {
             "key_code": "n"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -181,7 +181,7 @@
           "to": {
             "key_code": "r"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -190,7 +190,7 @@
           "to": {
             "key_code": "v"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -199,7 +199,7 @@
           "to": {
             "key_code": "j"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -208,7 +208,7 @@
           "to": {
             "key_code": "semicolon"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -217,7 +217,7 @@
           "to": {
             "key_code": "comma"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -226,7 +226,7 @@
           "to": {
             "key_code": "'"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -235,7 +235,7 @@
           "to": {
             "key_code": "slash"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -244,7 +244,7 @@
           "to": {
             "key_code": "w"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -253,7 +253,7 @@
           "to": {
             "key_code": "g"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -262,7 +262,7 @@
           "to": {
             "key_code": "m"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -271,7 +271,7 @@
           "to": {
             "key_code": "b"
           },
-          "type_": "basic"
+          "type": "basic"
         },
         {
           "from": {
@@ -280,7 +280,7 @@
           "to": {
             "key_code": "x"
           },
-          "type_": "basic"
+          "type": "basic"
         }
       ]
     }
