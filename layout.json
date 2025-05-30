@@ -35,7 +35,7 @@
             "key_code": "r"
           },
           "to": {
-            "key_code": "."
+            "key_code": "period"
           },
           "type_": "basic"
         },
@@ -176,7 +176,7 @@
         },
         {
           "from": {
-            "key_code": ";"
+            "key_code": "semicolon"
           },
           "to": {
             "key_code": "r"
@@ -185,7 +185,7 @@
         },
         {
           "from": {
-            "key_code": ":"
+            "key_code": "quote"
           },
           "to": {
             "key_code": "v"
@@ -206,7 +206,7 @@
             "key_code": "x"
           },
           "to": {
-            "key_code": ";"
+            "key_code": "semicolon"
           },
           "type_": "basic"
         },
@@ -215,7 +215,7 @@
             "key_code": "c"
           },
           "to": {
-            "key_code": ","
+            "key_code": "comma"
           },
           "type_": "basic"
         },
@@ -233,7 +233,7 @@
             "key_code": "b"
           },
           "to": {
-            "key_code": "/"
+            "key_code": "slash"
           },
           "type_": "basic"
         },
@@ -257,7 +257,7 @@
         },
         {
           "from": {
-            "key_code": ","
+            "key_code": "comma"
           },
           "to": {
             "key_code": "m"
@@ -266,7 +266,7 @@
         },
         {
           "from": {
-            "key_code": "."
+            "key_code": "period"
           },
           "to": {
             "key_code": "b"
@@ -275,7 +275,7 @@
         },
         {
           "from": {
-            "key_code": "/"
+            "key_code": "slash"
           },
           "to": {
             "key_code": "x"
