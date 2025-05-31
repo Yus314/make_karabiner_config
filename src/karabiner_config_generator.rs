@@ -1,6 +1,5 @@
 use crate::json_structures::{File, From, Manipulator, Modifiers, Rule, To};
 use crate::keycode_mapping::{process_key_symbol, TransformedKey};
-use crate::layout::MAPPINGS;
 
 fn add_left_shift(current_modifiers: &[String]) -> Vec<String> {
     let mut new_modifiers = current_modifiers.to_vec();
@@ -11,10 +10,13 @@ fn add_left_shift(current_modifiers: &[String]) -> Vec<String> {
     new_modifiers
 }
 
-pub fn generate_karabiner_config(description: String) -> File {
+pub fn generate_karabiner_config(
+    description: String,
+    mappings_to_process: &[(String, String)],
+) -> File {
     let mut final_manipulators: Vec<Manipulator> = Vec::new();
 
-    for (from_input_str, to_input_str) in MAPPINGS.iter() {
+    for (from_input_str, to_input_str) in mappings_to_process.iter() {
         let from_transformed_base: TransformedKey = process_key_symbol(from_input_str);
         let to_transformed_base: TransformedKey = process_key_symbol(to_input_str);
 
