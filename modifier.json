@@ -1,27 +1,27 @@
 {
   "rules": [
     {
-      "description": "JIS配列から自作配列への変換",
-	"manipulators": [
-	    {
-		"from": {
-		    "key_code":"japanese_eisuu"
-		},
-		"to":{
-		    "key_code":"left_control"
-		},
-		"type": "basic"
-	    },
-	    {
-		"from": {
-		    "key_code":"japanese_kana"
-		},
-		"to":{
-		    "key_code":"left_shift"
-		},
-		"type": "basic"
-	    }
-	]
+      "description": "CtrlとShiftを親指で押せるように変換",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "japanese_eisuu"
+          },
+          "to": {
+            "key_code": "left_control"
+          },
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "japanese_kana"
+          },
+          "to": {
+            "key_code": "left_shift"
+          },
+          "type": "basic"
+        }
+      ]
     }
   ]
 }
