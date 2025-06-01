@@ -20,6 +20,15 @@
             "key_code": "left_shift"
           },
           "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": {
+            "key_code": "japanese_kana"
+          },
+          "type": "basic"
         }
       ]
     }
