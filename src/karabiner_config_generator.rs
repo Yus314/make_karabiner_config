@@ -13,6 +13,7 @@ fn add_left_shift(current_modifiers: &[String]) -> Vec<String> {
 pub fn generate_karabiner_config(
     description: String,
     mappings_to_process: &[(String, String)],
+    set_from_optional_any: bool,
 ) -> File {
     let mut final_manipulators: Vec<Manipulator> = Vec::new();
 
@@ -20,12 +21,18 @@ pub fn generate_karabiner_config(
         let from_transformed_base: TransformedKey = process_key_symbol(from_input_str);
         let to_transformed_base: TransformedKey = process_key_symbol(to_input_str);
 
+	let from_optional_mods = if set_from_optional_any {
+            vec!["any".to_string()]
+        } else {
+            Vec::new()
+        };
+
         let from_base_modifiers_obj = if from_transformed_base.mandatory_modifiers.is_empty() {
             None
         } else {
             Some(Modifiers {
                 mandatory: from_transformed_base.mandatory_modifiers.clone(),
-                optional: Vec::new(),
+                optional: from_optional_mods.clone(),
             })
         };
         let to_base_modifiers_vec = if to_transformed_base.mandatory_modifiers.is_empty() {
@@ -50,7 +57,7 @@ pub fn generate_karabiner_config(
                 add_left_shift(&from_transformed_base.mandatory_modifiers);
             let from_shifted_modifiers_obj = Some(Modifiers {
                 mandatory: from_shifted_mandatory_mods,
-                optional: Vec::new(),
+                optional: from_optional_mods.clone(),
             });
 
             let to_shifted_mandatory_mods =
