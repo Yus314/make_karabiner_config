@@ -14,7 +14,7 @@ pub struct Rule {
 #[derive(Serialize, Debug)]
 pub struct Manipulator {
     pub from: From,
-    pub to: To,
+    pub to: Vec<ToEvent>,
     #[serde(default)]
     pub r#type: String,
 }
@@ -26,8 +26,8 @@ pub struct From {
     pub modifiers: Option<Modifiers>,
 }
 
-#[derive(Serialize, Debug)]
-pub struct To {
+#[derive(Serialize, Deserialize,Debug,Clone)]
+pub struct ToEvent {
     pub key_code: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub modifiers: Option<Vec<String>>,
