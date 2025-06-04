@@ -54,9 +54,9 @@ fn main() {
                     process::exit(1);
                 }
             }
-	    "--from-optional-any" => {
-		set_from_optional_any = true;
-	    }
+            "--from-optional-any" => {
+                set_from_optional_any = true;
+            }
             _ => {}
         }
         i += 1;
