@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "description": "JIS配列から自作配列への変換",
+      "description": "Failed to connect to a Wayland server: No such file or directory\nNote: WAYLAND_DISPLAY is unset (falling back to wayland-0)\nNote: XDG_RUNTIME_DIR is set to /run/user/1000\nPlease check whether /run/user/1000/wayland-0c",
       "manipulators": [
         {
           "from": {
@@ -112,10 +112,7 @@
             "key_code": "t"
           },
           "to": {
-            "key_code": "hyphen",
-            "modifiers": [
-              "left_shift"
-            ]
+            "key_code": "equal_sign"
           },
           "type": "basic"
         },
@@ -129,7 +126,7 @@
             }
           },
           "to": {
-            "key_code": "hyphen",
+            "key_code": "equal_sign",
             "modifiers": [
               "left_shift"
             ]

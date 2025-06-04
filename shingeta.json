@@ -1,0 +1,58 @@
+{
+  "rules": [
+    {
+      "description": "新下駄配列の実装",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "h"
+          },
+          "to": [
+            {
+              "key_code": "n"
+            },
+            {
+              "key_code": "o"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            {
+              "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Ascii"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
