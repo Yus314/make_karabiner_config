@@ -21,6 +21,7 @@ fn main() {
     let mut input_rust_file_path: Option<String> = None;
     let mut output_json_path = "./layout.json".to_string();
     let mut description = "JIS配列から自作配列への変換".to_string();
+    let mut set_from_optional_any = false;
 
     let mut i = 1;
 
@@ -53,6 +54,9 @@ fn main() {
                     process::exit(1);
                 }
             }
+            "--from-optional-any" => {
+                set_from_optional_any = true;
+            }
             _ => {}
         }
         i += 1;
@@ -79,7 +83,8 @@ fn main() {
         }
     };
 
-    let config: KarabinerFile = generate_karabiner_config(description, &parsed_mappings);
+    let config: KarabinerFile =
+        generate_karabiner_config(description, &parsed_mappings, set_from_optional_any);
 
     let json_str = match serde_json::to_string_pretty(&config) {
         Ok(s) => s,
