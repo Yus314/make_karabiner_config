@@ -30,7 +30,7 @@ pub fn generate_karabiner_config(
             Vec::new()
         };
 
-        let from_base_modifiers_obj = if from_transformed_base.mandatory_modifiers.is_empty() {
+        let from_base_modifiers_obj = if from_transformed_base.mandatory_modifiers.is_empty() && !set_from_optional_any{
             None
         } else {
             Some(Modifiers {
