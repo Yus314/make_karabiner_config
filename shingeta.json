@@ -792,6 +792,9 @@
           "to": [
             {
               "key_code": "n"
+            },
+            {
+              "key_code": "n"
             }
           ],
           "type": "basic",
@@ -821,6 +824,12 @@
               "modifiers": [
                 "left_shift"
               ]
+            },
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -841,7 +850,16 @@
           },
           "to": [
             {
-              "key_code": "っ"
+              "key_code": "x"
+            },
+            {
+              "key_code": "t"
+            },
+            {
+              "key_code": "s"
+            },
+            {
+              "key_code": "u"
             }
           ],
           "type": "basic",
@@ -867,7 +885,25 @@
           },
           "to": [
             {
-              "key_code": "っ",
+              "key_code": "x",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "t",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
               "modifiers": [
                 "left_shift"
               ]
