@@ -9,8 +9,6 @@ pub struct File {
 pub struct Rule {
     pub description: String,
     pub manipulators: Vec<Manipulator>,
-    #[serde(skip_serializing_if = "Option::is_none", default)]
-    pub conditions: Option<Vec<ConditionVariant>>,
 }
 
 #[derive(Serialize, Debug)]
@@ -19,6 +17,8 @@ pub struct Manipulator {
     pub to: Vec<ToEvent>,
     #[serde(default)]
     pub r#type: String,
+    #[serde(skip_serializing_if = "Option::is_none", default)]
+    pub conditions: Option<Vec<ConditionVariant>>,
 }
 
 #[derive(Serialize, Debug)]

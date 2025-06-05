@@ -11,7 +11,7 @@ mod karabiner_config_generator;
 mod keycode_mapping;
 mod rust_mappings_parser;
 
-use json_structures::{File as KarabinerFile, InputSourceDetail};
+use json_structures::{ConditionVariant, File as KarabinerFile, InputSourceDetail};
 use karabiner_config_generator::generate_karabiner_config;
 use rust_mappings_parser::parse_mappings_from_rust_file;
 
@@ -103,19 +103,21 @@ fn main() {
         }
     };
 
-    let condition_input_source_detail = if condition_if_input_source_id.is_some() {
-        Some(InputSourceDetail {
-            input_source_id: condition_if_input_source_id,
-        })
-    } else {
-        None
+    let mut manipulator_conditions: Option<Vec<ConditionVariant>> = None;
+
+    if condition_if_input_source_id.is_some() {
+        manipulator_conditions = Some(vec![ConditionVariant::InputSourceIf {
+            input_sources: vec![InputSourceDetail {
+                input_source_id: condition_if_input_source_id,
+            }],
+        }]);
     };
 
     let config: KarabinerFile = generate_karabiner_config(
         description,
         &parsed_mappings,
         set_from_optional_any,
-        condition_input_source_detail,
+        manipulator_conditions,
     );
     let json_str = match serde_json::to_string_pretty(&config) {
         Ok(s) => s,

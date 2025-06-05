@@ -81,7 +81,7 @@ pub fn generate_karabiner_config(
     description: String,
     mappings_to_process: &[(String, String)],
     set_from_optional_any: bool,
-    condition_input_source_if_detail: Option<InputSourceDetail>,
+    global_manipulator_conditions: Option<Vec<ConditionVariant>>,
 ) -> File {
     let mut final_manipulators: Vec<Manipulator> = Vec::new();
 
@@ -109,7 +109,7 @@ pub fn generate_karabiner_config(
         let to_transformed_result: TransformedKey = process_key_symbol(to_input_str);
         let mut to_events_for_manipulator: Vec<ToEvent> = Vec::new();
 
-        let key_code_str_from_transform = to_transformed_result.key_code;
+        let key_code_str_from_transform = to_transformed_result.key_code.clone();
         let modifires_from_transform = if to_transformed_result.mandatory_modifiers.is_empty() {
             None
         } else {
@@ -143,6 +143,7 @@ pub fn generate_karabiner_config(
             },
             to: to_events_for_manipulator.clone(),
             r#type: "basic".to_string(),
+            conditions: global_manipulator_conditions.clone(),
         });
 
         if from_input_str.len() == 1 && from_input_str.chars().all(|c| c.is_ascii_lowercase()) {
@@ -183,22 +184,14 @@ pub fn generate_karabiner_config(
                 },
                 to: to_shifted_events,
                 r#type: "basic".to_string(),
+                conditions: global_manipulator_conditions.clone(),
             });
-        }
-    }
-    let mut generated_conditions: Option<Vec<ConditionVariant>> = None;
-    if let Some(detail) = condition_input_source_if_detail {
-        if detail.input_source_id.is_some() {
-            generated_conditions = Some(vec![ConditionVariant::InputSourceIf {
-                input_sources: vec![detail],
-            }]);
         }
     }
     File {
         rules: vec![Rule {
             description,
             manipulators: final_manipulators,
-            conditions: generated_conditions,
         }],
     }
 }
