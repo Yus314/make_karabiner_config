@@ -21,7 +21,7 @@
               "type": "input_source_if",
               "input_sources": [
                 {
-                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Ascii"
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
                 }
               ]
             }
@@ -56,7 +56,7 @@
               "type": "input_source_if",
               "input_sources": [
                 {
-                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Ascii"
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
                 }
               ]
             }
