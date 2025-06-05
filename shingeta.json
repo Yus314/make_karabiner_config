@@ -177,7 +177,7 @@
           },
           "to": [
             {
-              "key_code": "、"
+              "key_code": "comma"
             }
           ],
           "type": "basic",
@@ -203,7 +203,7 @@
           },
           "to": [
             {
-              "key_code": "、",
+              "key_code": "comma",
               "modifiers": [
                 "left_shift"
               ]
@@ -1645,7 +1645,7 @@
           },
           "to": [
             {
-              "key_code": "。"
+              "key_code": "period"
             }
           ],
           "type": "basic",
