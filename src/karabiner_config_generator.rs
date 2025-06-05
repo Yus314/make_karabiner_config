@@ -1,5 +1,10 @@
-use crate::json_structures::{ConditionVariant, File, From, Manipulator, Modifiers, Rule, ToEvent};
-use crate::keycode_mapping::{process_key_symbol, TransformedKey};
+use crate::json_structures::{
+    ConditionVariant, File, From, Manipulator, Modifiers, Rule, SimultaneousKey, ToEvent,
+};
+use crate::keycode_mapping::{
+    parse_from_input_string, transform_string_for_to_event, FromEventType, ParsedFromEvent,
+    TransformedToKey,
+};
 
 fn is_known_single_multichar_keycode(s: &str) -> bool {
     // このリストは、Karabiner Elementsが単一のキーイベントとして認識する
@@ -85,101 +90,116 @@ pub fn generate_karabiner_config(
 
     for (from_input_str_ref, to_input_str_ref) in mappings_to_process.iter() {
         let from_input_str: &str = from_input_str_ref;
-        let from_transformed_base: TransformedKey = process_key_symbol(from_input_str);
+        let parsed_from_event: ParsedFromEvent = parse_from_input_string(from_input_str);
 
-        let from_optional_mods_for_from = if set_from_optional_any {
-            vec!["any".to_string()]
-        } else {
-            Vec::new()
-        };
+        let mut from_object_for_manipulator = crate::json_structures::From::default();
 
-        let from_base_modifiers_obj =
-            if from_transformed_base.mandatory_modifiers.is_empty() && !set_from_optional_any {
-                None
-            } else {
-                Some(Modifiers {
-                    mandatory: from_transformed_base.mandatory_modifiers.clone(),
-                    optional: from_optional_mods_for_from.clone(),
-                })
-            };
+        match parsed_from_event.event_type {
+            FromEventType::SingleKey => {
+                from_object_for_manipulator.key_code = parsed_from_event.key_code.clone();
+                let mandatory_mods = parsed_from_event.modifiers.clone();
+                let optional_mods = if set_from_optional_any {
+                    vec!["any".to_string()]
+                } else {
+                    Vec::new()
+                };
+
+                if !mandatory_mods.is_empty() || !optional_mods.is_empty() {
+                    from_object_for_manipulator.modifiers = Some(Modifiers {
+                        mandatory: mandatory_mods,
+                        optional: optional_mods,
+                    });
+                }
+            }
+            FromEventType::Simultaneous => {
+                if let Some(keys) = parsed_from_event.simultaneous_keys {
+                    from_object_for_manipulator.simultaneous = Some(
+                        keys.into_iter()
+                            .map(|kc| SimultaneousKey { key_code: kc })
+                            .collect(),
+                    );
+                }
+            }
+        }
 
         let to_input_str: &str = to_input_str_ref;
-        let to_transformed_result: TransformedKey = process_key_symbol(to_input_str);
+        let to_transformed_key: TransformedToKey = transform_string_for_to_event(to_input_str);
         let mut to_events_for_manipulator: Vec<ToEvent> = Vec::new();
 
-        let key_code_str_from_transform = to_transformed_result.key_code.clone();
-        let modifires_from_transform = if to_transformed_result.mandatory_modifiers.is_empty() {
+        let key_code_str_from_transform = to_transformed_key.key_code.clone();
+        let modifires_from_transform = if to_transformed_key.mandatory_modifiers.is_empty() {
             None
         } else {
-            Some(to_transformed_result.mandatory_modifiers.clone())
+            Some(to_transformed_key.mandatory_modifiers.clone())
         };
 
-        let is_romaji_sequence = key_code_str_from_transform.len() > 1
+        let is_romaji_sequence_to = key_code_str_from_transform.len() > 1
             && key_code_str_from_transform
                 .chars()
                 .all(|c| c.is_ascii_lowercase())
             && !is_known_single_multichar_keycode(&key_code_str_from_transform);
 
-        if is_romaji_sequence {
+        if is_romaji_sequence_to {
             for char_in_sequence in key_code_str_from_transform.chars() {
                 to_events_for_manipulator.push(ToEvent {
-                    key_code: char_in_sequence.to_string(),
+                    key_code: Some(char_in_sequence.to_string()),
                     modifiers: modifires_from_transform.clone(),
+                    ..Default::default()
                 });
             }
         } else {
             to_events_for_manipulator.push(ToEvent {
-                key_code: key_code_str_from_transform.clone(),
+                key_code: Some(key_code_str_from_transform.clone()),
                 modifiers: modifires_from_transform.clone(),
+                ..Default::default()
             });
         }
 
         final_manipulators.push(Manipulator {
-            from: From {
-                key_code: from_transformed_base.key_code.clone(),
-                modifiers: from_base_modifiers_obj,
-            },
+            from: from_object_for_manipulator.clone(),
             to: to_events_for_manipulator.clone(),
             r#type: "basic".to_string(),
             conditions: global_manipulator_conditions.clone(),
         });
 
         if from_input_str.len() == 1 && from_input_str.chars().all(|c| c.is_ascii_lowercase()) {
-            let from_shifted_mandatory_mods =
-                add_left_shift(&from_transformed_base.mandatory_modifiers);
-            let from_shifted_modifiers_obj =
-                if from_shifted_mandatory_mods.is_empty() && !set_from_optional_any {
-                    None
-                } else {
-                    Some(Modifiers {
-                        mandatory: from_shifted_mandatory_mods,
-                        optional: from_optional_mods_for_from.clone(),
-                    })
-                };
+            let mut shifted_from_object = crate::json_structures::From::default();
+            shifted_from_object.key_code = parsed_from_event.key_code.clone();
+            let shifted_mandatory_mods = add_left_shift(&parsed_from_event.modifiers);
+            let shifted_optional_mods = if set_from_optional_any {
+                vec!["any".to_string()]
+            } else {
+                Vec::new()
+            };
+            if !shifted_mandatory_mods.is_empty() || !shifted_optional_mods.is_empty() {
+                shifted_from_object.modifiers = Some(Modifiers {
+                    mandatory: shifted_mandatory_mods,
+                    optional: shifted_optional_mods,
+                });
+            }
 
             let mut to_shifted_events: Vec<ToEvent> = Vec::new();
             let to_shifted_overall_modifiers =
-                add_left_shift(&to_transformed_result.mandatory_modifiers);
+                add_left_shift(&to_transformed_key.mandatory_modifiers);
 
-            if is_romaji_sequence {
+            if is_romaji_sequence_to {
                 for char_in_sequence in key_code_str_from_transform.chars() {
                     to_shifted_events.push(ToEvent {
-                        key_code: char_in_sequence.to_string(),
+                        key_code: Some(char_in_sequence.to_string()),
                         modifiers: Some(to_shifted_overall_modifiers.clone()),
+                        ..Default::default()
                     });
                 }
             } else {
                 to_shifted_events.push(ToEvent {
-                    key_code: key_code_str_from_transform.clone(),
+                    key_code: Some(key_code_str_from_transform.clone()),
                     modifiers: Some(to_shifted_overall_modifiers.clone()),
+                    ..Default::default()
                 });
             }
 
             final_manipulators.push(Manipulator {
-                from: From {
-                    key_code: from_transformed_base.key_code.clone(),
-                    modifiers: from_shifted_modifiers_obj,
-                },
+                from: shifted_from_object,
                 to: to_shifted_events,
                 r#type: "basic".to_string(),
                 conditions: global_manipulator_conditions.clone(),

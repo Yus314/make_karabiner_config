@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::{collections::HashMap, default};
 
 fn get_jis_to_karabiner_map() -> HashMap<&'static str, &'static str> {
     HashMap::from([
@@ -154,16 +154,30 @@ fn get_hiragana_to_romaji_map() -> HashMap<&'static str, &'static str> {
         // get_jis_to_karabiner_map や特別ルールで処理する方が適切。
     ])
 }
+#[derive(Debug, Default, Clone, PartialEq)]
+pub enum FromEventType {
+    #[default]
+    SingleKey,
+    Simultaneous,
+}
+#[derive(Debug, Default, Clone)]
+pub struct ParsedFromEvent {
+    pub event_type: FromEventType,
+    pub key_code: Option<String>,
+    pub modifiers: Vec<String>,
+    pub simultaneous_keys: Option<Vec<String>>,
+}
 
-#[derive(Debug, Default)]
-pub struct TransformedKey {
+#[derive(Debug, Default, Clone)]
+pub struct TransformedToKey {
     pub key_code: String,
     pub mandatory_modifiers: Vec<String>,
 }
 
-pub fn process_key_symbol(symbol_str: &str) -> TransformedKey {
+pub fn transform_string_for_to_event(symbol_str: &str) -> TransformedToKey {
     let mut current_processing_str = symbol_str.to_string();
-    let mut transformed_key = TransformedKey::default();
+    let mut modifiers = Vec::new();
+    let final_key_code: String;
 
     if let Some(romaji) = get_hiragana_to_romaji_map().get(symbol_str) {
         current_processing_str = romaji.to_string();
@@ -171,37 +185,81 @@ pub fn process_key_symbol(symbol_str: &str) -> TransformedKey {
 
     match current_processing_str.as_str() {
         "=" => {
-            transformed_key.key_code = convert_jis_symbol_to_keycode_str("-")
+            final_key_code = convert_jis_symbol_to_keycode_str("-")
                 .unwrap_or("-")
                 .to_string();
-            transformed_key
-                .mandatory_modifiers
-                .push("left_shift".to_string());
-            return transformed_key;
+            modifiers.push("left_shift".to_string());
+            return TransformedToKey {
+                key_code: final_key_code,
+                mandatory_modifiers: modifiers,
+            };
         }
         "'" => {
-            transformed_key.key_code = convert_jis_symbol_to_keycode_str("7")
+            final_key_code = convert_jis_symbol_to_keycode_str("7")
                 .unwrap_or("7")
                 .to_string();
-            transformed_key
-                .mandatory_modifiers
-                .push("left_shift".to_string());
-            return transformed_key;
+            modifiers.push("left_shift".to_string());
+            return TransformedToKey {
+                key_code: final_key_code,
+                mandatory_modifiers: modifiers,
+            };
         }
         _ => {}
     }
     if let Some(kc_str) = convert_jis_symbol_to_keycode_str(&current_processing_str) {
-        transformed_key.key_code = kc_str.to_string();
+        final_key_code = kc_str.to_string();
     } else if current_processing_str.len() == 1
         && current_processing_str
             .chars()
             .next()
             .is_some_and(|c| c.is_alphabetic())
     {
-        transformed_key.key_code = current_processing_str.to_lowercase();
+        final_key_code = current_processing_str.to_lowercase();
     } else {
-        transformed_key.key_code = current_processing_str;
+        final_key_code = current_processing_str;
     }
+    TransformedToKey {
+        key_code: final_key_code,
+        mandatory_modifiers: modifiers,
+    }
+}
 
-    transformed_key
+pub fn parse_from_input_string(input_str: &str) -> ParsedFromEvent {
+    if input_str.starts_with("simul(") && input_str.ends_with(")") {
+        if let Some(keys_part) = input_str.get(6..input_str.len() - 1) {
+            let keys: Vec<String> = keys_part
+                .split(',')
+                .map(|s| s.trim().to_string())
+                .filter(|s| !s.is_empty())
+                .map(|s_val| {
+                    if let Some(kc) = convert_jis_symbol_to_keycode_str(&s_val) {
+                        kc.to_string()
+                    } else if s_val.len() == 1
+                        && s_val.chars().next().unwrap().is_ascii_alphabetic()
+                    {
+                        s_val.to_lowercase()
+                    } else {
+                        s_val
+                    }
+                })
+                .collect();
+
+            if !keys.is_empty() {
+                return ParsedFromEvent {
+                    event_type: FromEventType::Simultaneous,
+                    simultaneous_keys: Some(keys),
+                    key_code: None,
+                    modifiers: Vec::new(),
+                };
+            }
+        }
+    }
+    let single_key_transformed = transform_string_for_to_event(input_str);
+
+    ParsedFromEvent {
+        event_type: FromEventType::SingleKey,
+        key_code: Some(single_key_transformed.key_code),
+        modifiers: single_key_transformed.mandatory_modifiers,
+        simultaneous_keys: None,
+    }
 }
