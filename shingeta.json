@@ -2339,7 +2339,10 @@
           },
           "to": [
             {
-              "key_code": "!"
+              "key_code": "1",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",

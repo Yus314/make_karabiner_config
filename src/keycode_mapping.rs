@@ -213,6 +213,17 @@ pub fn transform_string_for_to_event(symbol_str: &str) -> TransformedToKey {
                 mandatory_modifiers: modifiers,
             };
         }
+        "!" => {
+            final_key_code = convert_jis_symbol_to_keycode_str("1")
+                .unwrap_or("1")
+                .to_string();
+            modifiers.push("left_shift".to_string());
+            return TransformedToKey {
+                key_code: final_key_code,
+                mandatory_modifiers: modifiers,
+            };
+        }
+
         _ => {}
     }
     if let Some(kc_str) = convert_jis_symbol_to_keycode_str(&current_processing_str) {
