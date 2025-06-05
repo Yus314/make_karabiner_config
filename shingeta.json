@@ -9,7 +9,7 @@
           },
           "to": [
             {
-              "key_code": "-"
+              "key_code": "hyphen"
             }
           ],
           "type": "basic",
@@ -35,7 +35,7 @@
           },
           "to": [
             {
-              "key_code": "-",
+              "key_code": "hyphen",
               "modifiers": [
                 "left_shift"
               ]

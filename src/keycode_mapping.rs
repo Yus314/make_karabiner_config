@@ -161,14 +161,14 @@ pub struct TransformedKey {
 }
 
 pub fn process_key_symbol(symbol_str: &str) -> TransformedKey {
+    let mut current_processing_str = symbol_str.to_string();
     let mut transformed_key = TransformedKey::default();
 
     if let Some(romaji) = get_hiragana_to_romaji_map().get(symbol_str) {
-        transformed_key.key_code = romaji.to_string();
-        return transformed_key;
+        current_processing_str = romaji.to_string();
     }
 
-    match symbol_str {
+    match current_processing_str.as_str() {
         "=" => {
             transformed_key.key_code = convert_jis_symbol_to_keycode_str("-")
                 .unwrap_or("-")
@@ -189,10 +189,18 @@ pub fn process_key_symbol(symbol_str: &str) -> TransformedKey {
         }
         _ => {}
     }
-    if let Some(kc_str) = convert_jis_symbol_to_keycode_str(symbol_str) {
+    if let Some(kc_str) = convert_jis_symbol_to_keycode_str(&current_processing_str) {
         transformed_key.key_code = kc_str.to_string();
+    } else if current_processing_str.len() == 1
+        && current_processing_str
+            .chars()
+            .next()
+            .is_some_and(|c| c.is_alphabetic())
+    {
+        transformed_key.key_code = current_processing_str.to_lowercase();
     } else {
-        transformed_key.key_code = symbol_str.to_string();
+        transformed_key.key_code = current_processing_str;
     }
+
     transformed_key
 }

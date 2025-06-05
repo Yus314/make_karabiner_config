@@ -1,5 +1,5 @@
 use std::fs;
-use syn::{Expr, ExprArray, ExprReference, ExprTuple, File, Ident, Item, Lit, LitStr};
+use syn::{Expr, ExprArray, ExprReference, ExprTuple, File, Ident, Item, Lit};
 
 #[derive(Debug)]
 pub enum ParseError {

@@ -1,6 +1,4 @@
-use crate::json_structures::{
-    ConditionVariant, File, From, InputSourceDetail, Manipulator, Modifiers, Rule, ToEvent,
-};
+use crate::json_structures::{ConditionVariant, File, From, Manipulator, Modifiers, Rule, ToEvent};
 use crate::keycode_mapping::{process_key_symbol, TransformedKey};
 
 fn is_known_single_multichar_keycode(s: &str) -> bool {
