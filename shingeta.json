@@ -1697,7 +1697,10 @@
           },
           "to": [
             {
-              "key_code": "ふぁ"
+              "key_code": "f"
+            },
+            {
+              "key_code": "a"
             }
           ],
           "type": "basic",
@@ -1787,7 +1790,10 @@
           },
           "to": [
             {
-              "key_code": "ふぃ"
+              "key_code": "f"
+            },
+            {
+              "key_code": "i"
             }
           ],
           "type": "basic",
@@ -1815,7 +1821,10 @@
           },
           "to": [
             {
-              "key_code": "ふぇ"
+              "key_code": "f"
+            },
+            {
+              "key_code": "e"
             }
           ],
           "type": "basic",
@@ -1843,7 +1852,10 @@
           },
           "to": [
             {
-              "key_code": "うぃ"
+              "key_code": "w"
+            },
+            {
+              "key_code": "i"
             }
           ],
           "type": "basic",
@@ -1964,7 +1976,10 @@
           },
           "to": [
             {
-              "key_code": "うぇ"
+              "key_code": "w"
+            },
+            {
+              "key_code": "e"
             }
           ],
           "type": "basic",
@@ -1992,7 +2007,10 @@
           },
           "to": [
             {
-              "key_code": "うぉ"
+              "key_code": "w"
+            },
+            {
+              "key_code": "o"
             }
           ],
           "type": "basic",
@@ -2473,7 +2491,10 @@
           },
           "to": [
             {
-              "key_code": "ふぉ"
+              "key_code": "f"
+            },
+            {
+              "key_code": "o"
             }
           ],
           "type": "basic",
@@ -2622,7 +2643,10 @@
           },
           "to": [
             {
-              "key_code": "う゛"
+              "key_code": "v"
+            },
+            {
+              "key_code": "u"
             }
           ],
           "type": "basic",
