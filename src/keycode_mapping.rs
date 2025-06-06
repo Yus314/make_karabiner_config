@@ -248,7 +248,7 @@ pub fn parse_from_input_string(input_str: &str) -> ParsedFromEvent {
     if input_str.starts_with("simul(") && input_str.ends_with(")") {
         if let Some(keys_part) = input_str.get(6..input_str.len() - 1) {
             let keys: Vec<String> = keys_part
-                .split(',')
+                .split_whitespace()
                 .map(|s| s.trim().to_string())
                 .filter(|s| !s.is_empty())
                 .map(|s_val| {

@@ -898,6 +898,9 @@
             "simultaneous": [
               {
                 "key_code": "d"
+              },
+              {
+                "key_code": "comma"
               }
             ]
           },
@@ -1838,6 +1841,9 @@
             "simultaneous": [
               {
                 "key_code": "s"
+              },
+              {
+                "key_code": "comma"
               }
             ]
           },
