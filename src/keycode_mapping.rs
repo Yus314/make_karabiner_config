@@ -107,6 +107,7 @@ fn get_hiragana_to_romaji_map() -> HashMap<&'static str, &'static str> {
         ("しょ", "sho"), // し (shi) ベース
         ("ちゃ", "cha"),
         ("ちゅ", "chu"),
+	("ちぇ", "che"),
         ("ちょ", "cho"), // ち (chi) ベース
         ("にゃ", "nya"),
         ("にゅ", "nyu"),
@@ -144,10 +145,15 @@ fn get_hiragana_to_romaji_map() -> HashMap<&'static str, &'static str> {
         ("ふぃ", "fi"),
         ("ふぇ", "fe"),
         ("ふぉ", "fo"),
-        ("うぃ", "wi"),
-        ("うぇ", "we"),
-        ("うぉ", "wo"),
+        ("うぃ", "uxi"),
+        ("うぇ", "uxe"),
+        ("うぉ", "uxo"),
         ("う゛", "vu"),
+	("てぃ", "texi"),
+	("でぃ", "dexi"),
+	("しぇ", "sye"),
+	("じぇ", "je"),
+			
         // 通常は IME が "fa" -> "ふぁ" のように処理する。
         // 今回はキー入力シーケンスの生成が目的なので、単独の小さい仮名は含めない方向で。
         ("っ", "xtsu"),

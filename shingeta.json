@@ -36,6 +36,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "q"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "k"
@@ -51,6 +93,48 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "w"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "g",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -98,6 +182,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "e"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "k"
@@ -113,6 +239,48 @@
             },
             {
               "key_code": "i"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "r"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -160,6 +328,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "t"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "d"
@@ -171,10 +381,61 @@
           },
           "to": [
             {
-              "key_code": "w"
+              "key_code": "u"
+            },
+            {
+              "key_code": "x"
             },
             {
               "key_code": "i"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "y"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "x",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -222,6 +483,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "u"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "d"
@@ -237,6 +540,48 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "i"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -284,6 +629,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "o"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "d"
@@ -295,10 +682,61 @@
           },
           "to": [
             {
-              "key_code": "w"
+              "key_code": "u"
+            },
+            {
+              "key_code": "x"
             },
             {
               "key_code": "e"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "p"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "x",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -326,10 +764,61 @@
           },
           "to": [
             {
-              "key_code": "w"
+              "key_code": "u"
+            },
+            {
+              "key_code": "x"
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "open_bracket"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "x",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -377,6 +866,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "a"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "k"
@@ -408,6 +939,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "s"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "k"
@@ -423,6 +996,48 @@
             },
             {
               "key_code": "e"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "d"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -470,6 +1085,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "f"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "k"
@@ -485,6 +1142,48 @@
             },
             {
               "key_code": "u"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "g"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -532,6 +1231,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "h"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "d"
@@ -544,6 +1285,42 @@
           "to": [
             {
               "key_code": "a"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "j"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -591,6 +1368,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "k"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "d"
@@ -603,6 +1422,42 @@
           "to": [
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "l"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -647,6 +1502,78 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "semicolon"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "quote"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
             "simultaneous": [
               {
                 "key_code": "d"
@@ -709,6 +1636,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "z"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "k"
@@ -724,6 +1693,48 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "x"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -771,6 +1782,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "c"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "k"
@@ -786,6 +1839,48 @@
             },
             {
               "key_code": "u"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "v"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -833,6 +1928,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "k"
+              },
+              {
+                "key_code": "b"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "d"
@@ -848,6 +1985,48 @@
             },
             {
               "key_code": "e"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "n"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -895,6 +2074,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "m"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "d"
@@ -926,6 +2147,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "comma"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "d"
@@ -941,6 +2204,48 @@
             },
             {
               "key_code": "u"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "period"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -988,6 +2293,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "d"
+              },
+              {
+                "key_code": "slash"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "v",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "l"
@@ -1003,6 +2350,48 @@
             },
             {
               "key_code": "i"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "q"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1050,6 +2439,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "w"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "l"
@@ -1081,6 +2512,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "e"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "l"
@@ -1092,7 +2565,70 @@
           },
           "to": [
             {
-              "key_code": "てぃ"
+              "key_code": "t"
+            },
+            {
+              "key_code": "e"
+            },
+            {
+              "key_code": "x"
+            },
+            {
+              "key_code": "i"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "r"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "x",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1120,7 +2656,70 @@
           },
           "to": [
             {
-              "key_code": "でぃ"
+              "key_code": "d"
+            },
+            {
+              "key_code": "e"
+            },
+            {
+              "key_code": "x"
+            },
+            {
+              "key_code": "i"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "t"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "x",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1148,7 +2747,61 @@
           },
           "to": [
             {
-              "key_code": "しぇ"
+              "key_code": "s"
+            },
+            {
+              "key_code": "y"
+            },
+            {
+              "key_code": "e"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "y"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1196,6 +2849,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "u"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "s"
@@ -1211,6 +2906,48 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "i"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1258,6 +2995,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "o"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "s"
@@ -1269,7 +3048,52 @@
           },
           "to": [
             {
-              "key_code": "じぇ"
+              "key_code": "j"
+            },
+            {
+              "key_code": "e"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "p"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1317,6 +3141,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "a"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "l"
@@ -1348,6 +3214,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "s"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "l"
@@ -1360,6 +3268,42 @@
           "to": [
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "d"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1407,6 +3351,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "f"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "l"
@@ -1422,6 +3408,48 @@
             },
             {
               "key_code": "u"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "g"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1469,6 +3497,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "h"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "s"
@@ -1484,6 +3554,48 @@
             },
             {
               "key_code": "a"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "j"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1531,6 +3643,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "k"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "s"
@@ -1546,6 +3700,48 @@
             },
             {
               "key_code": "a"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "l"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1593,6 +3789,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "semicolon"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "s"
@@ -1605,6 +3843,42 @@
           "to": [
             {
               "key_code": "？"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "quote"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "？",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1636,6 +3910,48 @@
             },
             {
               "key_code": "e"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "z"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1683,6 +3999,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "x"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "l"
@@ -1698,6 +4056,48 @@
             },
             {
               "key_code": "i"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "c"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "g",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1745,6 +4145,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "v"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "l"
@@ -1760,6 +4202,48 @@
             },
             {
               "key_code": "u"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "l"
+              },
+              {
+                "key_code": "b"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1807,6 +4291,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "n"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "s"
@@ -1822,6 +4348,48 @@
             },
             {
               "key_code": "a"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "m"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1869,6 +4437,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "comma"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "s"
@@ -1880,7 +4490,52 @@
           },
           "to": [
             {
-              "key_code": "ちぇ"
+              "key_code": "p"
+            },
+            {
+              "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "period"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1908,7 +4563,61 @@
           },
           "to": [
             {
-              "key_code": "ちぇ"
+              "key_code": "c"
+            },
+            {
+              "key_code": "h"
+            },
+            {
+              "key_code": "e"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "s"
+              },
+              {
+                "key_code": "slash"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -1959,6 +4668,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "q"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "i"
@@ -1993,6 +4750,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "w"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "i"
@@ -2011,6 +4816,54 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "e"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2061,6 +4914,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "r"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "i"
@@ -2079,6 +4980,54 @@
             },
             {
               "key_code": "u"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "t"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2129,6 +5078,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "y"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "e"
@@ -2147,6 +5144,54 @@
             },
             {
               "key_code": "a"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "u"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2197,6 +5242,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "i"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "e"
@@ -2212,6 +5305,48 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "o"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2262,6 +5397,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "p"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "i"
@@ -2280,6 +5463,54 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "a"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2327,6 +5558,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "s"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "i"
@@ -2342,6 +5615,48 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "d"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2392,6 +5707,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "f"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "i"
@@ -2426,6 +5789,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "g"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "e"
@@ -2444,6 +5855,54 @@
             },
             {
               "key_code": "u"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "h"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2494,6 +5953,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "j"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "e"
@@ -2525,6 +6032,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "k"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "e"
@@ -2540,6 +6089,48 @@
             },
             {
               "key_code": "e"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "l"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2590,6 +6181,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "semicolon"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "i"
@@ -2624,6 +6263,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "z"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "i"
@@ -2642,6 +6329,54 @@
             },
             {
               "key_code": "a"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "c"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2692,6 +6427,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "v"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "i"
@@ -2710,6 +6493,54 @@
             },
             {
               "key_code": "a"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "i"
+              },
+              {
+                "key_code": "b"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2754,6 +6585,42 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "n"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ょ",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "e"
@@ -2782,6 +6649,42 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "m"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ぃ",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "e"
@@ -2794,6 +6697,42 @@
           "to": [
             {
               "key_code": "ゎ"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "e"
+              },
+              {
+                "key_code": "slash"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ゎ",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2844,6 +6783,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "q"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "o"
@@ -2875,6 +6862,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "w"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "o"
@@ -2890,6 +6919,48 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "e"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -2940,6 +7011,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "r"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "g",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "o"
@@ -2958,6 +7077,54 @@
             },
             {
               "key_code": "u"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "t"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3002,6 +7169,42 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "y"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ゃ",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "w"
@@ -3014,6 +7217,42 @@
           "to": [
             {
               "key_code": "ぅ"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "u"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ぅ",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3064,6 +7303,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "i"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "w"
@@ -3095,6 +7382,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "o"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "w"
@@ -3107,6 +7436,42 @@
           "to": [
             {
               "key_code": "ぉ"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "p"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ぉ",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3157,6 +7522,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "a"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "o"
@@ -3188,6 +7601,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "s"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "o"
@@ -3203,6 +7658,48 @@
             },
             {
               "key_code": "i"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "d"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3253,6 +7750,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "f"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "g",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "o"
@@ -3271,6 +7816,54 @@
             },
             {
               "key_code": "o"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "g"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3315,6 +7908,42 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "h"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ゅ",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "w"
@@ -3327,6 +7956,42 @@
           "to": [
             {
               "key_code": "ぁ"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "j"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ぁ",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3374,6 +8039,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "k"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "g",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "w"
@@ -3405,6 +8112,48 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "l"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "w"
@@ -3417,6 +8166,42 @@
           "to": [
             {
               "key_code": "ぇ"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "semicolon"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ぇ",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3467,6 +8252,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "z"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "o"
@@ -3482,6 +8315,48 @@
             },
             {
               "key_code": "a"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "c"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3532,6 +8407,54 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "v"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "g",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "o"
@@ -3550,6 +8473,54 @@
             },
             {
               "key_code": "a"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "o"
+              },
+              {
+                "key_code": "b"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3594,6 +8565,42 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "n"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ょ",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "w"
@@ -3622,6 +8629,42 @@
         },
         {
           "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "m"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ぃ",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
             "simultaneous": [
               {
                 "key_code": "w"
@@ -3634,6 +8677,42 @@
           "to": [
             {
               "key_code": "ゎ"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "slash"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "ゎ",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",

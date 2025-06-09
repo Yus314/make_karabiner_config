@@ -69,7 +69,7 @@ pub const MAPPINGS: &[(&str, &str)] = &[
     ("simul(s n)", "わ"),
     ("simul(s m)", "だ"),
     ("simul(s ,)", "ぴ"),
-    ("simul(s .)", "ちぇ"),
+    ("simul(s .)", "ぽ"),
     ("simul(s /)", "ちぇ"),
     // 薬指上段シフト
     // 上段

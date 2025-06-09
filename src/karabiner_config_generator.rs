@@ -162,26 +162,28 @@ pub fn generate_karabiner_config(
             conditions: global_manipulator_conditions.clone(),
         });
 
-        if from_input_str.len() == 1 && from_input_str.chars().all(|c| c.is_ascii_lowercase()) {
-            let mut shifted_from_object = crate::json_structures::From::default();
-            shifted_from_object.key_code = parsed_from_event.key_code.clone();
-            let shifted_mandatory_mods = add_left_shift(&parsed_from_event.modifiers);
-            let shifted_optional_mods = if set_from_optional_any {
-                vec!["any".to_string()]
-            } else {
-                Vec::new()
-            };
-            if !shifted_mandatory_mods.is_empty() || !shifted_optional_mods.is_empty() {
-                shifted_from_object.modifiers = Some(Modifiers {
-                    mandatory: shifted_mandatory_mods,
-                    optional: shifted_optional_mods,
-                });
+	        let should_create_shifted_variant = match parsed_from_event.event_type {
+            FromEventType::SingleKey => {
+                from_input_str.len() == 1 && from_input_str.chars().all(|c| c.is_ascii_lowercase())
             }
+            FromEventType::Simultaneous => {
+                true
+            }
+        };
 
+        if should_create_shifted_variant {
+	    let mut shifted_from_object = from_object_for_manipulator;
+	                let mut mods = shifted_from_object.modifiers.take().unwrap_or_default();
+            mods.mandatory = add_left_shift(&mods.mandatory);
+            shifted_from_object.modifiers = Some(mods);
+
+	                let to_transformed_key = transform_string_for_to_event(to_input_str); // 再度取得
+            let is_romaji_sequence_to = to_transformed_key.key_code.len() > 1 &&
+                                        to_transformed_key.key_code.chars().all(|c| c.is_ascii_lowercase()) &&
+                                        !is_known_single_multichar_keycode(&to_transformed_key.key_code);
             let mut to_shifted_events: Vec<ToEvent> = Vec::new();
-            let to_shifted_overall_modifiers =
-                add_left_shift(&to_transformed_key.mandatory_modifiers);
-
+            let to_shifted_overall_modifiers = add_left_shift(&to_transformed_key.mandatory_modifiers);
+	    
             if is_romaji_sequence_to {
                 for char_in_sequence in key_code_str_from_transform.chars() {
                     to_shifted_events.push(ToEvent {
