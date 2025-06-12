@@ -162,6 +162,7 @@ fn get_hiragana_to_romaji_map() -> HashMap<&'static str, &'static str> {
         ("、", ","),
         ("。", "."),
         ("!", "!"),
+	("？", "?"),
         // その他記号 (句読点など) - これらは通常 process_key_symbol の別の箇所で処理されるか、
         // もしくはキーコードとして直接定義されるべきものが多い。
         // 必要であれば、特定の記号のローマ字読みのようなものを追加することも可能。
@@ -229,6 +230,18 @@ pub fn transform_string_for_to_event(symbol_str: &str) -> TransformedToKey {
                 mandatory_modifiers: modifiers,
             };
         }
+	        
+        "?" => {
+            final_key_code = convert_jis_symbol_to_keycode_str("/")
+                .unwrap_or("/")
+                .to_string();
+            modifiers.push("left_shift".to_string());
+            return TransformedToKey {
+                key_code: final_key_code,
+                mandatory_modifiers: modifiers,
+            };
+        }
+	
 
         _ => {}
     }

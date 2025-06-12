@@ -1,0 +1,43 @@
+{
+    "description": "AquqSKKで日本語が有効化の際に英数で変更できるようにする",
+    "manipulators": [
+        {
+            "from": { "key_code": "japanese_eisuu" },
+            "to": { "key_code": "right_control" },
+            "type": "basic"
+        },
+        {
+            "from": { "key_code": "japanese_kana" },
+            "to": { "key_code": "left_shift" },
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "input_sources": [{ "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Hiragana" }],
+                    "type": "input_source_if"
+                }
+            ],
+            "from": { "key_code": "left_control" },
+            "to": [{ "key_code": "l" }],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "input_sources": [
+                        {
+                            "input_mode_id": "com.apple.inputmethod.Roman",
+                            "input_source_id": "jp.sourceforge.inputmethod.aquaskk.Ascii",
+                            "language": "en"
+                        }
+                    ],
+                    "type": "input_source_if"
+                }
+            ],
+            "from": { "key_code": "left_control" },
+            "to": [{ "key_code": "japanese_eisuu" }],
+            "type": "basic"
+        }
+    ]
+}

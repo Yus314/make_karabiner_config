@@ -3842,7 +3842,10 @@
           },
           "to": [
             {
-              "key_code": "？"
+              "key_code": "slash",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic",
@@ -3875,7 +3878,7 @@
           },
           "to": [
             {
-              "key_code": "？",
+              "key_code": "slash",
               "modifiers": [
                 "left_shift"
               ]
